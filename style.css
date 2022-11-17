@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+.one{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: one;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-left: 45%;
+    margin-top: 150px;
+}
+@keyframes one{
+    0%{
+        background-color: bisque;
+    }
+    20%{
+        background-color: blueviolet;
+    }
+    40%{
+        background-color: chartreuse;
+    }
+    60%{
+        background-color: darkorange;
+    }
+    80%{
+        background-color: honeydew;
+    }
+    100%{
+        background-color: aquamarine;
+        
+    }
+    
+
+}
+@media(max-width:340px){
+    .one{
+        margin-left: 100px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
+.master{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.top{
+    color: azure;
+    width: 350px;
+    height: 20px;
+    margin: 2px;
+    background-color: grey;
+}
+@media (max-width:340px){
+    .top{
+        height: 35px;
+    }
+}
+
+.top:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.top2{
+    color: azure;
+    width: 350px;
+    height: 20px;
+    margin: 2px;
+    margin-top: 190px;
+    background-color: grey;
+}
+@media (max-width:340px){
+    .top2{
+        height: 35px;
+        margin-top: 140px;
+    }
+}
+.top2:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
